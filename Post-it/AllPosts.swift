@@ -61,11 +61,16 @@ class AllPosts: UIViewController {
                 if !AllPosts.toggleSide {
                     AllPosts.currY -= AllPosts.currHeight
                 }
-                let newLabel: CustomLabel = CustomLabel(frame: CGRect(x: AllPosts.currX, y: AllPosts.currY, width: AllPosts.currWidth, height: AllPosts.currHeight), padding: UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5))
+                let newLabel: CustomLabel = CustomLabel(frame: CGRect(x: AllPosts.currX, y: AllPosts.currY, width: AllPosts.currWidth, height: AllPosts.currHeight), padding: UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10))
                 //newLabel.textAlignment = .center
                 newLabel.text = carriedPost
+                let currColor = NewNote.rgbVals[NewNote.selectedColor]
+                let red = Float(currColor[0])
+                let green = Float(currColor[1])
+                let blue = Float(currColor[2])
+                newLabel.backgroundColor = UIColor.init(red:CGFloat(red/255.0), green:CGFloat(green/255.0), blue:CGFloat(blue/255.0), alpha:CGFloat(1));
                 newLabel.numberOfLines = AllPosts.currHeight / 20
-                newLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+                newLabel.lineBreakMode = NSLineBreakMode.byCharWrapping
                 NSLayoutConstraint(item: newLabel, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 200).isActive = true
                 NSLayoutConstraint(item: newLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 30).isActive = true
                 scrollView.addSubview(newLabel)
@@ -90,7 +95,7 @@ class AllPosts: UIViewController {
         let numChars: Int = s.characters.count
         var numLines: Float = Float(numChars) / 16
         numLines.round(.up)
-        return (Int(numLines) + 2) * 20
+        return (Int(numLines) + 5) * 20
     }
 
     /*

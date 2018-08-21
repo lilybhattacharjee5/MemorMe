@@ -23,6 +23,7 @@ class NewNote: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
                                             [253, 227, 167],
                                             [200, 247, 197]]
     static let colors = ["Red", "Blue", "Aqua", "Orange", "Green"]
+    static var selectedColor: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,7 @@ class NewNote: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBAction func post(_ sender: Any) {
         NewNote.newPost = noteBlank.text
         NewNote.postMade = true
+        NewNote.selectedColor = colorPicker.selectedRow(inComponent: 0)
     }
     /*
     // MARK: - Navigation

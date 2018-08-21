@@ -10,13 +10,16 @@ import UIKit
 
 class DataViewController: UIViewController {
 
-    @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet var appTitle: UILabel!
+    @IBOutlet var dataLabel: UILabel!
     var dataObject: String = ""
-
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        appTitle.text = "MemorMe"
+        appTitle.textAlignment = .center
+        //btn.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
     }
 
     override func didReceiveMemoryWarning() {

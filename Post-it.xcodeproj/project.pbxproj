@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		700CEDF7212A1A9B0077F3DC /* NewNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700CEDF6212A1A9B0077F3DC /* NewNote.swift */; };
+		700CEDF9212A4A290077F3DC /* AllPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700CEDF8212A4A290077F3DC /* AllPosts.swift */; };
 		701C01C121264CB2000E1111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701C01C021264CB2000E1111 /* AppDelegate.swift */; };
 		701C01C321264CB2000E1111 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701C01C221264CB2000E1111 /* RootViewController.swift */; };
 		701C01C521264CB2000E1111 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701C01C421264CB2000E1111 /* DataViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		700CEDF6212A1A9B0077F3DC /* NewNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNote.swift; sourceTree = "<group>"; };
+		700CEDF8212A4A290077F3DC /* AllPosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPosts.swift; sourceTree = "<group>"; };
 		701C01BD21264CB2000E1111 /* Post-it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Post-it.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		701C01C021264CB2000E1111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		701C01C221264CB2000E1111 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +109,9 @@
 				701C01C221264CB2000E1111 /* RootViewController.swift */,
 				701C01C421264CB2000E1111 /* DataViewController.swift */,
 				701C01C621264CB2000E1111 /* ModelController.swift */,
+				700CEDF8212A4A290077F3DC /* AllPosts.swift */,
 				701C01C821264CB2000E1111 /* Main.storyboard */,
+				700CEDF6212A1A9B0077F3DC /* NewNote.swift */,
 				701C01CB21264CB2000E1111 /* Assets.xcassets */,
 				701C01CD21264CB2000E1111 /* LaunchScreen.storyboard */,
 				701C01D021264CB2000E1111 /* Info.plist */,
@@ -266,7 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				701C01C321264CB2000E1111 /* RootViewController.swift in Sources */,
+				700CEDF9212A4A290077F3DC /* AllPosts.swift in Sources */,
 				701C01C721264CB2000E1111 /* ModelController.swift in Sources */,
+				700CEDF7212A1A9B0077F3DC /* NewNote.swift in Sources */,
 				701C01C521264CB2000E1111 /* DataViewController.swift in Sources */,
 				701C01C121264CB2000E1111 /* AppDelegate.swift in Sources */,
 			);

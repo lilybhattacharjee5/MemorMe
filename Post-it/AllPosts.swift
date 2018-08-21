@@ -71,6 +71,8 @@ class AllPosts: UIViewController {
                 newLabel.backgroundColor = UIColor.init(red:CGFloat(red/255.0), green:CGFloat(green/255.0), blue:CGFloat(blue/255.0), alpha:CGFloat(1));
                 newLabel.numberOfLines = AllPosts.currHeight / 20
                 newLabel.lineBreakMode = NSLineBreakMode.byCharWrapping
+                newLabel.layer.cornerRadius = 8.0
+                newLabel.clipsToBounds = true
                 NSLayoutConstraint(item: newLabel, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 200).isActive = true
                 NSLayoutConstraint(item: newLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 30).isActive = true
                 scrollView.addSubview(newLabel)
